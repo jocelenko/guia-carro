@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<title>Guia de visitas</title>
+<meta name="description" content="Guia pessoal para visitar concessionárias: carros com custo por ano, segurança, porta-malas e o que conferir no test drive.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230071E3'/%3E%3Cpath d='M7 19l2-6c.4-1.2 1.5-2 2.8-2h8.4c1.3 0 2.4.8 2.8 2l2 6v4a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1H11v1a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#FFFFFF; --bg-2:#F5F5F7; --bg-3:#EDEDF0; --card:#FFFFFF; --card-2:#FAFAFC;
+  --ink:#1D1D1F; --ink-2:#515154; --ink-3:#6E6E73;
+  --line:#D2D2D7; --line-2:#E5E5EA;
+  --acc:#0071E3; --acc-ink:#0058B0; --acc-soft:#EAF2FD; --acc-on:#FFFFFF;
+  --good:#1E7B45; --good-soft:#E6F4EC;
+  --warn:#9A6400; --warn-soft:#FCF3E2;
+  --crit:#B3261E; --crit-soft:#FBEAE8;
+  --s1:#0E9384; --s2:#E0761B; --s3:#2C6FD1; --s4:#7A8B14; --s5:#6B4FBB;
+  --sh-1:0 1px 2px rgba(0,0,0,.05), 0 1px 3px rgba(0,0,0,.04);
+  --sh-2:0 2px 6px rgba(0,0,0,.06), 0 10px 26px -12px rgba(0,0,0,.16);
+  --r-s:10px; --r-m:16px; --r-l:22px;
+  --nav-h:64px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#000000; --bg-2:#0E0E10; --bg-3:#1C1C1F; --card:#1D1D1F; --card-2:#242427;
+    --ink:#F5F5F7; --ink-2:#B4B4B8; --ink-3:#8E8E93;
+    --line:#3A3A3C; --line-2:#2C2C2E;
+    --acc:#2997FF; --acc-ink:#6CB6FF; --acc-soft:#0B2742; --acc-on:#04121F;
+    --good:#3FBF6F; --good-soft:#0F2A1A;
+    --warn:#E0A33A; --warn-soft:#2E2210;
+    --crit:#FF6B5E; --crit-soft:#3A1512;
+    --s1:#2BB3A3; --s2:#F08A3C; --s3:#4A82D8; --s4:#9AAE2A; --s5:#8375DC;
+    --sh-1:none; --sh-2:none;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#000000; --bg-2:#0E0E10; --bg-3:#1C1C1F; --card:#1D1D1F; --card-2:#242427;
+  --ink:#F5F5F7; --ink-2:#B4B4B8; --ink-3:#8E8E93;
+  --line:#3A3A3C; --line-2:#2C2C2E;
+  --acc:#2997FF; --acc-ink:#6CB6FF; --acc-soft:#0B2742; --acc-on:#04121F;
+  --good:#3FBF6F; --good-soft:#0F2A1A;
+  --warn:#E0A33A; --warn-soft:#2E2210;
+  --crit:#FF6B5E; --crit-soft:#3A1512;
+  --s1:#2BB3A3; --s2:#F08A3C; --s3:#4A82D8; --s4:#9AAE2A; --s5:#8375DC;
+  --sh-1:none; --sh-2:none;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:var(--bg-2); color:var(--ink); font-family:Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.45; font-variant-numeric:tabular-nums; letter-spacing:-.01em;
+  padding-bottom:calc(var(--nav-h) + env(safe-area-inset-bottom) + 16px)}
+a{color:var(--acc-ink)}
+button,input,select,textarea{font:inherit; color:inherit}
+:where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:2px solid var(--acc); outline-offset:2px; border-radius:8px}
+.in{max-width:1120px; margin:0 auto; padding:0 16px}
+[hidden]{display:none !important}
+
+/* topo */
+.topo{position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:saturate(1.6) blur(14px); -webkit-backdrop-filter:saturate(1.6) blur(14px);
+  border-bottom:1px solid var(--line-2); padding-top:env(safe-area-inset-top)}
+.topo .in{display:flex; align-items:center; gap:12px; min-height:58px}
+.marca{display:flex; align-items:center; gap:10px; margin-right:auto; min-width:0}
+.marca .ic{width:30px; height:30px; border-radius:9px; background:var(--acc); flex:0 0 auto; display:grid; place-items:center}
+.marca .ic svg{width:18px; height:18px; fill:var(--acc-on)}
+.marca b{display:block; font-size:16.5px; font-weight:800; letter-spacing:-.03em; line-height:1.1}
+.marca small{display:block; font-size:12.5px; color:var(--ink-3); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.btnIc{width:44px; height:44px; border-radius:50%; border:1px solid var(--line); background:var(--card); display:grid; place-items:center; cursor:pointer; flex:0 0 auto}
+.btnIc svg{width:18px; height:18px}
+
+/* seções */
+.aba{padding:18px 0 8px}
+.aba h2{font-size:26px; font-weight:800; letter-spacing:-.035em; line-height:1.15; margin:4px 0 6px}
+.lead{color:var(--ink-2); margin:0 0 16px; font-size:15px}
+.eyebrow{font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3)}
+
+/* filtros */
+.filtros{background:var(--card); border:1px solid var(--line-2); border-radius:var(--r-l); padding:14px; box-shadow:var(--sh-1); display:grid; gap:12px}
+.busca{display:flex; align-items:center; gap:8px; border:1px solid var(--line); border-radius:12px; padding:0 12px; background:var(--card-2); min-height:46px}
+.busca svg{width:18px; height:18px; color:var(--ink-3); flex:0 0 auto}
+.busca input{border:0; background:transparent; outline:0; flex:1; min-width:0; font-size:16px; padding:10px 0}
+.teto .tTopo{display:flex; justify-content:space-between; align-items:baseline; gap:8px}
+.teto .tTopo span{font-size:13.5px; color:var(--ink-2); font-weight:600}
+.teto .tTopo b{font-size:15px; font-weight:800}
+.teto input{width:100%; accent-color:var(--acc); min-height:44px; margin:0}
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chip{min-height:40px; padding:0 14px; border-radius:99px; border:1px solid var(--line); background:var(--card); font-size:14px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px}
+.chip .n{font-size:12px; color:var(--ink-3); font-weight:600}
+.chip[aria-pressed="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.chip[aria-pressed="true"] .n{color:color-mix(in srgb, var(--bg) 70%, transparent)}
+.linha2{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+select{min-height:46px; border:1px solid var(--line); border-radius:12px; background:var(--card-2); padding:0 10px; font-size:15px; width:100%}
+.toggle{min-height:44px; border-radius:12px; border:1px solid var(--line); background:var(--card-2); font-weight:600; font-size:14.5px; cursor:pointer}
+.toggle[aria-pressed="true"]{background:var(--acc-soft); border-color:var(--acc); color:var(--acc-ink)}
+.resumo{font-size:14px; color:var(--ink-2); margin:14px 2px 10px}
+.resumo b{color:var(--ink)}
+.legenda{margin:0 0 14px}
+.legenda summary{cursor:pointer; font-size:14px; font-weight:600; color:var(--acc-ink); min-height:40px; display:flex; align-items:center; list-style:none}
+.legenda summary::-webkit-details-marker{display:none}
+.legenda ul{margin:4px 0 0; padding:0; list-style:none; display:grid; gap:8px}
+.legenda li{font-size:14px; color:var(--ink-2); display:flex; gap:8px; align-items:flex-start}
+
+/* cards */
+#lista{display:grid; gap:12px}
+@media(min-width:760px){ #lista{grid-template-columns:1fr 1fr} }
+@media(min-width:1100px){ #lista{grid-template-columns:1fr 1fr 1fr} }
+.card{background:var(--card); border:1px solid var(--line-2); border-radius:var(--r-l); padding:16px; box-shadow:var(--sh-1);
+  border-left:5px solid var(--stc); display:flex; flex-direction:column; gap:10px; min-width:0; scroll-margin-top:72px}
+.card.st-prio{--stc:var(--acc)} .card.st-vale{--stc:var(--good)} .card.st-sose{--stc:var(--line)} .card.st-evite{--stc:var(--crit)}
+.cTopo{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.pill{font-size:12px; font-weight:700; letter-spacing:.02em; padding:4px 10px; border-radius:99px; white-space:nowrap}
+.st-prio .pill{background:var(--acc-soft); color:var(--acc-ink)}
+.st-vale .pill{background:var(--good-soft); color:var(--good)}
+.st-sose .pill{background:var(--bg-3); color:var(--ink-2)}
+.st-evite .pill{background:var(--crit-soft); color:var(--crit)}
+.tag0km{font-size:12px; font-weight:700; padding:4px 10px; border-radius:99px; background:var(--warn-soft); color:var(--warn)}
+.minha{font-size:12px; font-weight:700; padding:4px 10px; border-radius:99px; border:1px solid var(--line); color:var(--ink-2); margin-left:auto}
+.card h3{margin:0; font-size:19px; font-weight:800; letter-spacing:-.03em; line-height:1.2}
+.card h3 .anos{display:block; font-size:14px; font-weight:600; color:var(--ink-3); letter-spacing:0; margin-top:2px}
+.custo{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap}
+.custo b{font-size:28px; font-weight:800; letter-spacing:-.04em; line-height:1}
+.custo span{font-size:13.5px; color:var(--ink-3)}
+.custo .proj{font-size:12px; font-weight:700; color:var(--warn); background:var(--warn-soft); padding:3px 8px; border-radius:99px}
+.fatos{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:6px}
+.fatos li{background:var(--bg-2); border-radius:12px; padding:8px 10px; min-width:0}
+.fatos .k{display:block; font-size:11.5px; color:var(--ink-3); font-weight:600}
+.fatos b{display:block; font-size:16px; font-weight:800; letter-spacing:-.02em}
+.fatos em{display:block; font-style:normal; font-size:12px; color:var(--ink-2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.fatos .ruim b{color:var(--crit)}
+.fatos .semTeste b{color:var(--ink-3); font-size:14px}
+.pq{margin:0; font-size:15px; color:var(--ink)}
+.alerta{margin:0; font-size:13.5px; font-weight:600; color:var(--warn); background:var(--warn-soft); padding:8px 10px; border-radius:10px}
+.marcar{display:grid; grid-template-columns:repeat(3,1fr); gap:6px}
+.marcar button{min-height:44px; border-radius:12px; border:1px solid var(--line); background:var(--card); font-size:13.5px; font-weight:600; cursor:pointer; padding:0 4px}
+.marcar button[aria-pressed="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.det{border-top:1px solid var(--line-2); padding-top:4px}
+.det > summary{cursor:pointer; min-height:44px; display:flex; align-items:center; justify-content:space-between; font-weight:700; font-size:14.5px; color:var(--acc-ink); list-style:none}
+.det > summary::-webkit-details-marker{display:none}
+.det > summary::after{content:""; width:9px; height:9px; border-right:2px solid currentColor; border-bottom:2px solid currentColor; transform:rotate(45deg); margin-right:6px; transition:transform .2s}
+.det[open] > summary::after{transform:rotate(-135deg)}
+.bloco{margin:10px 0 14px}
+.bloco h4{margin:0 0 6px; font-size:13px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-3)}
+.bloco p{margin:0; font-size:14.5px; color:var(--ink-2)}
+.barra{display:flex; height:12px; border-radius:6px; overflow:hidden; background:var(--bg-3); margin:4px 0 8px}
+.barra i{display:block}
+.legC{list-style:none; margin:0; padding:0; display:grid; gap:4px}
+.legC li{display:flex; align-items:center; gap:8px; font-size:14px}
+.legC li .sq{width:10px; height:10px; border-radius:3px; flex:0 0 auto}
+.legC li .v{margin-left:auto; font-weight:700}
+.kv{display:grid; grid-template-columns:1fr auto; gap:4px 12px; font-size:14px}
+.kv dt{color:var(--ink-2)} .kv dd{margin:0; font-weight:700; text-align:right}
+.chk{list-style:none; margin:0; padding:0; display:grid; gap:2px}
+.chk label{display:flex; gap:10px; align-items:flex-start; min-height:44px; padding:8px 0; font-size:14.5px; cursor:pointer}
+.chk input{width:20px; height:20px; margin:1px 0 0; accent-color:var(--acc); flex:0 0 auto}
+.chk input:checked + span{color:var(--ink-3); text-decoration:line-through}
+.loja{border:1px solid var(--line-2); border-radius:14px; padding:10px 12px; margin-bottom:8px; background:var(--card-2)}
+.loja b{display:block; font-size:15px}
+.loja .end{display:block; font-size:13.5px; color:var(--ink-2)}
+.loja .hor{display:block; font-size:12.5px; color:var(--ink-3); margin-top:2px}
+.acoes{display:flex; gap:8px; margin-top:8px; flex-wrap:wrap}
+.btn{min-height:44px; padding:0 16px; border-radius:12px; border:1px solid var(--line); background:var(--card); font-weight:700; font-size:14px;
+  display:inline-flex; align-items:center; gap:6px; text-decoration:none; color:var(--ink); cursor:pointer}
+.btn.pri{background:var(--acc); border-color:var(--acc); color:var(--acc-on)}
+.btn svg{width:16px; height:16px}
+textarea{width:100%; min-height:88px; border:1px solid var(--line); border-radius:12px; background:var(--card-2); padding:10px 12px; font-size:15px; resize:vertical}
+.vazio{background:var(--card); border:1px dashed var(--line); border-radius:var(--r-l); padding:22px; text-align:center; color:var(--ink-2)}
+
+/* blocos de conteúdo */
+.painel{background:var(--card); border:1px solid var(--line-2); border-radius:var(--r-l); padding:16px; box-shadow:var(--sh-1); margin-bottom:12px}
+.painel h3{margin:0 0 4px; font-size:18px; font-weight:800; letter-spacing:-.025em}
+.painel .sub{margin:0 0 12px; font-size:14px; color:var(--ink-2)}
+.parada{display:grid; grid-template-columns:52px 1fr; gap:10px; padding:12px 0; border-top:1px solid var(--line-2)}
+.parada:first-of-type{border-top:0}
+.parada .h{font-weight:800; font-size:15px; color:var(--acc-ink)}
+.parada b{display:block; font-size:16px}
+.parada .ver{font-size:14px; color:var(--ink-2); margin-top:2px}
+.oferta{display:grid; gap:4px; padding:12px 0; border-top:1px solid var(--line-2)}
+.oferta:first-of-type{border-top:0}
+.oferta .t{display:flex; justify-content:space-between; gap:10px; align-items:baseline}
+.oferta b{font-size:16px}
+.oferta .por{font-size:18px; font-weight:800; white-space:nowrap}
+.oferta .de{font-size:13px; color:var(--ink-3); text-decoration:line-through; white-space:nowrap}
+.oferta .meta{font-size:13.5px; color:var(--ink-2)}
+.selo{display:inline-block; font-size:12px; font-weight:700; padding:2px 8px; border-radius:99px; background:var(--bg-3); color:var(--ink-2); margin-right:4px}
+.selo.ok{background:var(--good-soft); color:var(--good)}
+.selo.fim{background:var(--crit-soft); color:var(--crit)}
+.selo.restr{background:var(--warn-soft); color:var(--warn)}
+.janela{padding:12px 0; border-top:1px solid var(--line-2)}
+.janela:first-of-type{border-top:0}
+.janela .q{font-size:12.5px; font-weight:700; color:var(--acc-ink); letter-spacing:.02em}
+.janela b{display:block; font-size:16px; margin:2px 0}
+.janela p{margin:0; font-size:14.5px; color:var(--ink-2)}
+.msg{background:var(--bg-2); border-radius:12px; padding:12px; font-size:15px; white-space:pre-wrap; margin:0 0 10px}
+.fontes{font-size:13.5px; padding-left:18px; margin:6px 0 0; color:var(--ink-2)}
+.fontes li{margin:4px 0}
+.prosa p{margin:0 0 10px; font-size:15px; color:var(--ink-2)}
+.prosa b{color:var(--ink)}
+.rodape{font-size:12.5px; color:var(--ink-3); text-align:center; padding:12px 16px 4px}
+
+/* navegação inferior */
+.nav{position:fixed; left:0; right:0; bottom:0; z-index:30; background:color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter:saturate(1.6) blur(14px); -webkit-backdrop-filter:saturate(1.6) blur(14px);
+  border-top:1px solid var(--line-2); padding-bottom:env(safe-area-inset-bottom)}
+.nav .in{display:grid; grid-template-columns:repeat(6,1fr); height:var(--nav-h); padding:0 4px}
+.nav a{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; text-decoration:none; color:var(--ink-3); font-size:11px; font-weight:600; min-width:0}
+.nav a svg{width:22px; height:22px}
+.nav a[aria-current="page"]{color:var(--acc-ink)}
+.toast{position:fixed; left:50%; bottom:calc(var(--nav-h) + env(safe-area-inset-bottom) + 14px); transform:translateX(-50%); background:var(--ink); color:var(--bg);
+  padding:10px 16px; border-radius:99px; font-size:14px; font-weight:600; z-index:40; opacity:0; pointer-events:none; transition:opacity .2s}
+.toast.on{opacity:1}
+@media(prefers-reduced-motion:reduce){ *{transition:none !important} }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="in">
+    <div class="marca">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 15l1.6-4.6A2.5 2.5 0 0 1 7 8.7h10a2.5 2.5 0 0 1 2.4 1.7L21 15v4a1 1 0 0 1-1 1h-1.5a1 1 0 0 1-1-1v-1h-11v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg></span>
+      <div><b>Guia de visitas</b><small id="sub">Carro para família, até R$ 25 mil por ano</small></div>
+    </div>
+    <button class="btnIc" id="tema" type="button" aria-label="Alternar tema claro e escuro">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M21.5 12h-2M4.5 12h-2M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4M18.7 18.7l-1.4-1.4M6.7 6.7L5.3 5.3"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- CARROS -->
+  <section class="aba in" id="carros" aria-labelledby="t-carros">
+    <span class="eyebrow">Carros</span>
+    <h2 id="t-carros">Quanto cada um custa por ano</h2>
+    <p class="lead">Média de 4 anos rodando 15 mil km por ano. Soma perda de valor, combustível, seguro, manutenção e IPVA. Toque em um carro para ver de onde vem o número, o que conferir e onde ele está.</p>
+
+    <div class="filtros">
+      <label class="busca">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg>
+        <input id="q" type="search" placeholder="Procurar modelo" aria-label="Procurar modelo" autocomplete="off">
+      </label>
+      <div class="teto">
+        <div class="tTopo"><span>Teto de custo por ano</span><b id="tetoVal">R$ 25 mil</b></div>
+        <input id="teto" type="range" min="18000" max="36000" step="500" value="25000" aria-label="Teto de custo por ano">
+      </div>
+      <div class="chips" id="chipsSt" role="group" aria-label="Filtrar por avaliação"></div>
+      <div class="linha2">
+        <select id="loja" aria-label="Filtrar por loja"></select>
+        <select id="ordem" aria-label="Ordenar">
+          <option value="custo">Mais barato por ano</option>
+          <option value="seg">Mais seguro</option>
+          <option value="pm">Maior porta-malas</option>
+          <option value="cf">Mais confortável</option>
+        </select>
+      </div>
+      <button class="toggle" id="soMarcados" type="button" aria-pressed="false">Mostrar só os que marquei</button>
+    </div>
+
+    <p class="resumo" id="resumo" aria-live="polite"></p>
+
+    <details class="legenda">
+      <summary>O que significa cada avaliação</summary>
+      <ul>
+        <li><span class="pill" style="background:var(--acc-soft);color:var(--acc-ink)">Prioridade</span><span>Teste de segurança recente bom, porta-malas de família e custo dentro do teto. Veja primeiro.</span></li>
+        <li><span class="pill" style="background:var(--good-soft);color:var(--good)">Vale ver</span><span>Bom no custo e no espaço, mas sem teste de segurança recente ou com algum risco.</span></li>
+        <li><span class="pill" style="background:var(--bg-3);color:var(--ink-2)">Só se for bom negócio</span><span>Tem um defeito claro. Só compre bem abaixo da FIPE.</span></li>
+        <li><span class="pill" style="background:var(--crit-soft);color:var(--crit)">Evite</span><span>Teste de segurança ruim, saiu de linha ou não serve para família. Está aqui para você reconhecer quando o vendedor oferecer.</span></li>
+      </ul>
+    </details>
+
+    <div id="lista"></div>
+  </section>
+
+  <!-- ROTEIRO -->
+  <section class="aba in" id="roteiro" aria-labelledby="t-roteiro" hidden>
+    <span class="eyebrow">Roteiro</span>
+    <h2 id="t-roteiro">Três saídas</h2>
+    <p class="lead">Ligue ou mande mensagem antes e peça a lista de seminovos de 2022 a 2024 no pátio. A mensagem pronta está na aba Checklist.</p>
+    <div id="saidas"></div>
+  </section>
+
+  <!-- QUANDO COMPRAR -->
+  <section class="aba in" id="quando" aria-labelledby="t-quando" hidden>
+    <span class="eyebrow">Quando comprar</span>
+    <h2 id="t-quando">Ofertas de agora e as próximas janelas</h2>
+    <p class="lead">Desconto de fábrica vale para 0km. Mesmo comprando seminovo, cada corte no 0km derruba o usado. Leve esses números para negociar.</p>
+    <div class="painel">
+      <h3>Ofertas de outubro de 2026</h3>
+      <p class="sub">Confira na loja. Promoção acaba sem aviso quando o estoque termina.</p>
+      <div id="ofertas"></div>
+    </div>
+    <div class="painel">
+      <h3>Quando os descontos costumam aparecer</h3>
+      <p class="sub">O que as reportagens e o mercado indicam para os próximos meses.</p>
+      <div id="janelas"></div>
+    </div>
+  </section>
+
+  <!-- CHECKLIST -->
+  <section class="aba in" id="checklist" aria-labelledby="t-check" hidden>
+    <span class="eyebrow">Checklist</span>
+    <h2 id="t-check">Em toda loja</h2>
+    <p class="lead">Marque conforme for fazendo. Fica salvo neste aparelho.</p>
+    <div class="painel">
+      <h3>Antes de sair de casa</h3>
+      <p class="sub">Mande para a loja pelo WhatsApp.</p>
+      <p class="msg" id="msg">Olá, procuro seminovo automático entre 2022 e 2024. Tenho interesse em [modelos]. Vocês têm no pátio? Podem me mandar ano, versão, quilometragem e preço? Quero agendar test drive no dia [dia].</p>
+      <button class="btn pri" id="copiar" type="button">Copiar mensagem</button>
+    </div>
+    <div class="painel"><h3>No carro</h3><p class="sub">Para família com bebê.</p><ul class="chk" id="chkCarro"></ul></div>
+    <div class="painel"><h3>Nos papéis</h3><p class="sub">Antes de negociar preço.</p><ul class="chk" id="chkPapel"></ul></div>
+    <div class="painel"><h3>Na negociação</h3><p class="sub">O que pesa a seu favor.</p><ul class="chk" id="chkNeg"></ul></div>
+    <button class="btn" id="limparChk" type="button">Desmarcar tudo</button>
+  </section>
+
+  <!-- MÉTODO -->
+  <section class="aba in" id="metodo" aria-labelledby="t-metodo" hidden>
+    <span class="eyebrow">Como ler</span>
+    <h2 id="t-metodo">De onde vêm os números</h2>
+    <div class="painel prosa">
+      <h3>Custo por ano</h3>
+      <p>É a média de 4 anos de posse rodando <b>15 mil km por ano</b>. Soma o que o carro perde de valor, combustível a R$ 6,20 o litro, seguro, manutenção e IPVA de 2%. Considera compra à vista.</p>
+      <p><b>Medido:</b> o preço da Tabela FIPE de agosto de 2026 e a curva de perda de valor de cada modelo. <b>Estimado:</b> seguro, manutenção e consumo, por marca e porte.</p>
+      <p>Todo <b>0km</b> aparece como <b>projeção</b>, com três cenários de revenda em 4 anos sobre o preço pago. <b>72%</b> no otimista, igual ao Corolla Híbrido, o carro que menos perde valor na lista. <b>65%</b> na base. <b>55%</b> no pessimista, se houver outro corte de preço ou a marca enfraquecer. O filtro de teto usa o cenário do meio.</p>
+      <p>Fiz assim porque o modelo, para carro sem histórico, usa a curva mediana do mercado, que retém uns 74% em 4 anos. Isso já é o cenário otimista, e numa guerra de preço ele engana.</p>
+      <p>O <b>Nivus Highline em oferta</b> tem conta própria. Ele está 19% abaixo da FIPE da versão e tem curva de revenda medida, que perde 22% em 4 anos. O cenário provável supõe que a FIPE desce até o preço da oferta e depois segue essa curva.</p>
+      <p>Cada cartão de 0km mostra quanto o carro precisa valer daqui a 4 anos para caber no teto que você escolher.</p>
+    </div>
+    <div class="painel prosa">
+      <h3>Segurança</h3>
+      <p>Notas do <b>Latin NCAP</b>, lista oficial até dezembro de 2025, mais a confirmação do Kicks novo em 13/10/2026. Mostro ocupante adulto e criança em porcentagem.</p>
+      <p>A nota vale para o ano e a versão testados. Virtus só do 2023 em diante. T-Cross só do 2025 em diante. Kardian com 5 estrelas só se produzido a partir de agosto de 2025. Confira airbags da unidade.</p>
+      <p>Desde janeiro de 2026 o teste ficou mais duro. Nenhum carro desta lista foi retestado nas regras novas. <b>Sem teste</b> não quer dizer inseguro, quer dizer sem essa informação.</p>
+    </div>
+    <div class="painel prosa">
+      <h3>Porta-malas</h3>
+      <p>Cada marca mede de um jeito. <b>BYD e Fiat medem com água</b>, o que dá número maior. O Atto 2 anuncia 455 litros e tem 256 pelo método padrão. Não decida por litros. Leve o carrinho.</p>
+    </div>
+    <div class="painel prosa">
+      <h3>Conforto e revenda</h3>
+      <p>Conforto é uma nota de 1 a 5 aproximada por porte e ano. É o critério mais fraco e não enxerga acabamento nem silêncio. Revenda é de 1 a 5 e diz quão rápido o modelo sai quando você anuncia.</p>
+    </div>
+    <div class="painel">
+      <h3>Fontes</h3>
+      <ul class="fontes" id="fontes"></ul>
+    </div>
+  </section>
+</main>
+
+<p class="rodape">Atualizado em 16/10/2026. Base FIPE de agosto de 2026. Guia pessoal, não é recomendação profissional.</p>
+
+<nav class="nav" aria-label="Seções">
+  <div class="in" id="navIn"></div>
+</nav>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const LOJAS = {
+  vw:{nome:'VW Vox', end:'Av. Lédio João Martins, 90, Kobrasol, São José', tel:'+554830271700', hor:'Confirme o horário por telefone'},
+  toyota:{nome:'Hai Toyota', end:'Marginal BR-282, Via Expressa, 1777, Abraão, Florianópolis', tel:'+554821081000', hor:'Seg a sex 8h às 18h30. Sáb 9h às 13h'},
+  hyundai:{nome:'Geração Hyundai', end:'Av. Presidente Kennedy, 112, Campinas, São José', tel:'+554832980000', hor:'Confirme o horário por telefone'},
+  chery:{nome:'Geração Caoa Chery', end:'Av. Presidente Kennedy, 705, Campinas, São José', tel:'+554840421600', hor:'Seg a sex 8h às 19h. Sáb 8h às 14h'},
+  byd:{nome:'DVA BYD', end:'BR-101, km 205, Sala 01, Barreiros, São José', tel:'+554837713737', hor:'Confirme o horário por telefone'},
+  honda:{nome:'Honda Hit', end:'R. Álvaro Tolentino, 1770, Capoeiras, Florianópolis', tel:'+554833815800', hor:'Seg a sex 8h às 18h30. Sáb 9h às 13h'},
+  renault:{nome:'Globo Renault', end:'R. Joaquim Vaz, ao lado do 1589, Praia Comprida, São José', tel:'', hor:'Telefone não confirmado. Use globorenault.com.br'},
+  nissan:{nome:'Globo Nissan', end:'R. Joaquim Vaz, ao lado do 1589, Praia Comprida, São José', tel:'', hor:'Telefone não confirmado. Use globonissan.com.br'},
+  jaecoo:{nome:'Omoda e Jaecoo', end:'Loja não confirmada na região', tel:'', hor:'Use o localizador no site da marca'},
+  peugeot:{nome:'Florence Peugeot', end:'Av. Gov. Ivo Silveira, 1653, Capoeiras, Florianópolis', tel:'', hor:'Telefone não confirmado'},
+  localiza:{nome:'Localiza Seminovos', end:'Av. Presidente Kennedy, 448, Campinas, São José', tel:'08002002000', hor:'Endereço de diretório. Confirme antes de ir'},
+  movida:{nome:'Movida Seminovos', end:'Av. Josué Di Bernardi, 14, Campinas, São José', tel:'+554833436850', hor:'Seg a sex 9h às 18h. Sáb 9h às 13h'}
+};
+
+const ST = {
+  prio:{nome:'Prioridade', curto:'Prioridade'},
+  vale:{nome:'Vale ver', curto:'Vale ver'},
+  sose:{nome:'Só se for bom negócio', curto:'Só se'},
+  evite:{nome:'Evite', curto:'Evite'}
+};
+
+/* custo, dep, comb, seg, man, ipva em R$ por ano. fipe e rev em R$. gar em meses de garantia de fábrica restante.
+   nota.e = estrelas Latin NCAP ou null quando não há teste no protocolo atual. */
+const CARROS = [
+ {id:'virtus24', nome:'VW Virtus', anos:'2023 a 2026, números do 2024', st:'prio', custo:23365, dep:7044, comb:7750, seg:4059, man:2624, ipva:1888, fipe:105198, rev:77021, liq:4, gar:12, cf:4.0, kml:12, en:'Flex',
+  nota:{e:5,a:92,c:92,txt:'Teste de dez/2022 com 6 airbags. Vale para chassi de ano 2023 em diante.'}, pm:{l:521,txt:''}, lojas:['vw','localiza','movida'],
+  pq:'O melhor equilíbrio para família. Tem 5 estrelas com 92% em proteção infantil, o segundo maior porta-malas da lista e custa R$ 23,4 mil por ano. Só vale do 2023 em diante, porque o modelo anterior não tem essa nota.',
+  chk:['Confirme no documento que o ano modelo é 2023 ou mais novo','Virtus 2024: consulte o recall do airbag do passageiro pelo chassi no site da VW','Pergunte pelas ofertas da VW, que vão até 31/10']},
+ {id:'corollahib22', nome:'Toyota Corolla Híbrido', anos:'2022, o 2023 sai quase igual', st:'prio', custo:22490, dep:6219, comb:5471, seg:4356, man:3957, ipva:2489, fipe:132392, rev:107517, liq:5, gar:0, cf:4.2, kml:17, en:'Híbrido pleno',
+  nota:{e:4,a:73,c:72,txt:'Teste de nov/2024 com 7 airbags. Sem restrição de chassi, vale para a geração desde 2020.'}, pm:{l:470,txt:''}, lojas:['toyota'],
+  pq:'A melhor revenda da lista e 17 km/l sem precisar de tomada. Tem 4 estrelas no teste de 2024 e custa R$ 22,5 mil por ano, menos que o Corolla flex. O 2023 sai a R$ 22,9 mil.',
+  chk:['Peça por escrito o prazo da garantia da bateria híbrida','Peça o histórico de revisões na rede Toyota','Rode em trânsito lento para sentir o modo elétrico','Teste logo depois o Corolla Cross Híbrido, na mesma loja']},
+ {id:'tracker', nome:'Chevrolet Tracker', anos:'2021 a 2026, números do 2023', st:'prio', custo:21578, dep:3913, comb:8455, seg:3958, man:3367, ipva:1885, fipe:99453, rev:83800, liq:4, gar:0, cf:4.4, kml:11, en:'Flex',
+  nota:{e:5,a:91,c:92,txt:'Teste de nov/2022 com 6 airbags. No teste de poste o pré-tensionador do cinto pegou fogo e a Chevrolet fez recall em abril de 2022.'}, pm:{l:393,txt:'No limite para carrinho. Teste antes.'}, lojas:['localiza','movida'], semLoja:'Não confirmei concessionária Chevrolet na região. Procure nas locadoras.',
+  pq:'O carro com 5 estrelas mais barato da lista, R$ 21,6 mil por ano, com revenda forte. O porta-malas de 393 litros é o ponto fraco para quem vai carregar carrinho.',
+  chk:['Coloque o carrinho no porta-malas antes de qualquer coisa','Ano 2021 ou 2022: confirme que o recall do cinto foi feito','Confirme 6 airbags na versão']},
+ {id:'nivus', nome:'VW Nivus', anos:'2021 a 2026, números do 2024', st:'prio', custo:22365, dep:4805, comb:8304, seg:4172, man:2999, ipva:2086, fipe:111167, rev:91948, liq:3, gar:12, cf:4.4, kml:11.2, en:'Flex',
+  nota:{e:5,a:92,c:92,txt:'Teste de set/2022 com 6 airbags. Sem restrição de chassi.'}, pm:{l:415,txt:''}, lojas:['vw','localiza','movida'],
+  pq:'5 estrelas com 92% para criança por R$ 22,4 mil por ano. Porta-malas maior que o do Tracker e menor que o do Virtus. A VW anunciou o Nivus Highline novo por R$ 128.990 na primeira quinzena de outubro, perto de preço de seminovo.',
+  chk:['Nivus 2023: consulte o recall do airbag do passageiro pelo chassi','Pergunte se a oferta do Highline novo ainda vale','Coloque o carrinho no porta-malas']},
+
+ {id:'kardian26', nome:'Renault Kardian 0km', anos:'2026, FIPE R$ 108.711', st:'vale', zero:true, proj:true, P:108711, N:15639, custo:25151, pmin:23249, pmax:27869, dep:9512, comb:8087, seg:4153, man:1464, ipva:1935, fipe:108711, rev:70662, liq:2, gar:36, cf:3.8, kml:11.5, en:'Flex',
+  cen:[{n:'Otimista',d:'retém 72%',rev:78272,c:23249},{n:'Base',d:'retém 65%',rev:70662,c:25151},{n:'Pessimista',d:'retém 55%',rev:59791,c:27869}],
+  nota:{e:5,a:83,c:83,txt:'Teste de nov/2025 com 6 airbags. Vale para carros produzidos a partir de agosto de 2025.'}, pm:{l:410,txt:''}, lojas:['renault'],
+  pq:'O único 0km que cabe no seu teto em algum cenário. 5 estrelas, 410 litros e 36 meses de garantia. No cenário base fica no limite, R$ 25,2 mil por ano. A revenda da Renault é o ponto fraco, e o conforto marca 3,8.',
+  chk:['Confirme que o carro foi produzido depois de agosto de 2025','Teste o banco traseiro com a cadeirinha','Compare com um Kardian 2025 seminovo']},
+ {id:'creta23', nome:'Hyundai Creta', anos:'2023', st:'vale', custo:21977, dep:3697, comb:8611, seg:4489, man:2935, ipva:2245, fipe:118599, rev:103810, liq:4, gar:24, cf:4.4, kml:10.8, en:'Flex',
+  nota:{e:null,txt:'O Creta brasileiro nunca foi testado pelo Latin NCAP. O teste de 2015 é de um Creta indiano.'}, pm:{l:422,txt:''}, lojas:['hyundai','localiza','movida'],
+  pq:'Ainda tem 24 meses de garantia de fábrica e a curva de preço mais bem medida da lista. Custa R$ 22 mil por ano e perde pouco valor. A segurança da versão vendida aqui nunca foi testada.',
+  chk:['Confirme 6 airbags na versão','Veja quanto resta de garantia e se ela passa para você']},
+ {id:'city23', nome:'Honda City Sedan', anos:'2023', st:'vale', custo:22059, dep:5297, comb:7440, seg:3920, man:3535, ipva:1867, fipe:102930, rev:81741, liq:4, gar:0, cf:4.0, kml:12.5, en:'Flex',
+  nota:{e:null,txt:'Só existe teste de 2015, de outra geração.'}, pm:{l:519,txt:'Sedã tem boca de porta-malas menor. Teste o carrinho.'}, lojas:['honda'],
+  pq:'519 litros e revenda forte por R$ 22,1 mil por ano. O espaço é o melhor argumento dele. A geração atual nunca foi testada.',
+  chk:['Teste a abertura do porta-malas com o carrinho','Peça o histórico de revisões']},
+ {id:'tiggo7', nome:'Caoa Chery Tiggo 7', anos:'2023', st:'vale', custo:23636, dep:5092, comb:9300, seg:3996, man:3345, ipva:1903, fipe:103476, rev:83107, liq:2, gar:36, cf:5.0, kml:10, en:'Flex',
+  nota:{e:null,txt:'A Caoa Chery não tem nenhum carro na lista do Latin NCAP.'}, pm:{l:525,txt:''}, lojas:['chery'],
+  pq:'Conforto 5,0, o máximo da lista, 525 litros e 36 meses de garantia por R$ 23,6 mil por ano. O risco é o importador, que já tirou o Arrizo 6 de linha quatro vezes. Gasta mais combustível que os outros.',
+  chk:['Pergunte se o Tiggo 7 segue em importação regular','Pergunte o prazo de entrega de peças de câmbio','Confirme se a garantia passa para o segundo dono']},
+ {id:'onixplus', nome:'Chevrolet Onix Plus', anos:'2023', st:'vale', custo:19341, dep:3549, comb:7881, seg:3546, man:2946, ipva:1418, fipe:76339, rev:62142, liq:5, gar:0, cf:4.0, kml:11.8, en:'Flex',
+  nota:{e:null,txt:'Teste de 2019, regras antigas, com 6 airbags.'}, pm:{l:469,txt:''}, lojas:['localiza','movida'], semLoja:'Não confirmei concessionária Chevrolet na região. Procure nas locadoras.',
+  pq:'O mais barato com conforto 4, R$ 19,3 mil por ano, e revenda 5 de 5. O porta-malas é bom para sedã compacto. A nota de segurança é de antes do teste ficar mais duro.',
+  chk:['Teste a abertura do porta-malas com o carrinho','Confirme 6 airbags']},
+ {id:'versa24', nome:'Nissan Versa', anos:'2024', st:'vale', custo:20175, dep:4746, comb:8087, seg:3246, man:2551, ipva:1546, fipe:85713, rev:66731, liq:3, gar:12, cf:4.0, kml:11.5, en:'Flex',
+  nota:{e:null,txt:'Nunca testado nesta geração. O teste de 2016 é do modelo anterior.'}, pm:{l:482,txt:''}, lojas:['nissan','localiza'],
+  pq:'Sedã com 482 litros por R$ 20,2 mil por ano, ainda com 12 meses de garantia. A geração atual nunca foi testada e a revenda é média.',
+  chk:['Teste a abertura do porta-malas com o carrinho','Confirme quantos airbags a versão tem']},
+ {id:'spin23', nome:'Chevrolet Spin', anos:'2023', st:'vale', custo:22531, dep:4492, comb:9789, seg:3501, man:3227, ipva:1522, fipe:84950, rev:66980, liq:4, gar:0, cf:4.0, kml:9.5, en:'Flex',
+  nota:{e:null,txt:'Nunca testada pelo Latin NCAP.'}, pm:{l:710,txt:'Com 5 lugares. As fontes divergem.'}, lojas:['localiza','movida'], semLoja:'Não confirmei concessionária Chevrolet na região. Procure nas locadoras.',
+  pq:'O maior porta-malas da lista e 7 lugares, se a família crescer. Custa R$ 22,5 mil por ano. Gasta mais combustível, anda pouco e nunca foi testada.',
+  chk:['Se pensar em mais filhos, teste a versão de 7 lugares','Confirme quantos airbags a versão tem']},
+ {id:'king25', nome:'BYD King Híbrido', anos:'2025', st:'vale', custo:24572, dep:9875, comb:4895, seg:5792, man:1493, ipva:2518, fipe:141722, rev:102223, liq:2, gar:60, cf:4.8, kml:19, en:'Híbrido plug-in, roda sem tomada',
+  nota:{e:null,txt:'Nunca testado. A BYD só tem o Dolphin Plus na lista.'}, pm:{l:450,txt:'A BYD mede com água. Pelo método padrão deve ser bem menos.'}, lojas:['byd'],
+  pq:'Híbrido que roda sem tomada, 60 meses de garantia e feito em Camaçari. Custa R$ 24,6 mil por ano no meu modelo. Com o consumo do Inmetro sem recarga, que é o seu caso, sobe para uns R$ 25,6 mil.',
+  alerta:'No limite do teto quando usado sem tomada.',
+  chk:['Rode com a bateria descarregada e anote o consumo','Leve o carrinho, o porta-malas anunciado é medido com água','Peça relatório de saúde da bateria']},
+ {id:'corollacross23', nome:'Toyota Corolla Cross Híbrido', anos:'2023', st:'vale', custo:26684, dep:9822, comb:5636, seg:4634, man:3865, ipva:2726, fipe:150382, rev:111093, liq:5, gar:0, cf:5.0, kml:16.5, en:'Híbrido pleno',
+  nota:{e:null,txt:'Nunca testado pelo Latin NCAP.'}, pm:{l:440,txt:''}, lojas:['toyota'],
+  pq:'Conforto 5,0 e revenda 5 de 5, com 16,5 km/l. Passa do teto, R$ 26,7 mil por ano. Teste logo depois do Corolla sedã, na mesma loja, para ver se o espaço compensa a diferença.',
+  chk:['Teste um atrás do outro com o Corolla Híbrido','Peça a garantia da bateria híbrida por escrito']},
+
+ {id:'hb20s23', nome:'Hyundai HB20S', anos:'2023 a 2026, números do 2023', st:'sose', custo:20654, dep:5127, comb:7881, seg:3539, man:2568, ipva:1539, fipe:86921, rev:66411, liq:5, gar:24, cf:4.0, kml:11.8, en:'Flex',
+  nota:{e:3,a:68,c:75,txt:'Teste de 2023 com 6 airbags e controle de estabilidade, feito no HB20 hatch.'}, pm:{l:475,txt:''}, lojas:['hyundai','localiza','movida'],
+  pq:'Barato, R$ 20,7 mil por ano, com revenda 5 de 5 e 24 meses de garantia. Tem 3 estrelas, enquanto Tracker e Nivus têm 5 por pouco mais.',
+  chk:['Confirme que é ano 2023 ou mais novo, com 6 airbags']},
+ {id:'virtus22', nome:'VW Virtus', anos:'2020 a 2022, números do 2022', st:'sose', custo:21502, dep:4474, comb:7750, seg:3467, man:4198, ipva:1613, fipe:90102, rev:72205, liq:4, gar:0, cf:3.4, kml:12, en:'Flex',
+  nota:{e:null,txt:'Só teste de 2018, regras antigas, com 4 airbags.'}, pm:{l:521,txt:''}, lojas:['vw','localiza','movida'],
+  pq:'Mesmo espaço do Virtus 2023 por R$ 1,9 mil a menos por ano. Você abre mão das 5 estrelas, porque ele é anterior à reestilização.',
+  chk:['Compare o preço com um 2023 antes de fechar']},
+ {id:'tcross24', nome:'VW T-Cross', anos:'2020 a 2024, números do 2024', st:'sose', custo:23690, dep:5550, comb:8455, seg:4458, man:2999, ipva:2229, fipe:121352, rev:99153, liq:4, gar:12, cf:4.4, kml:11, en:'Flex',
+  nota:{e:null,txt:'Só teste de 2019, regras antigas. As 5 estrelas valem do 2025 em diante.'}, pm:{l:373,txt:'420 com o banco traseiro deslizado à frente.'}, lojas:['vw','localiza','movida'],
+  pq:'Revenda forte, mas sem as 5 estrelas do modelo 2025 e com porta-malas pequeno. Custa R$ 23,7 mil por ano.',
+  chk:['Teste o carrinho com o banco traseiro na posição normal']},
+ {id:'corolla22', nome:'Toyota Corolla flex', anos:'2022', st:'sose', custo:24129, dep:5934, comb:8087, seg:3782, man:4165, ipva:2161, fipe:115997, rev:92261, liq:5, gar:0, cf:4.2, kml:11.5, en:'Flex',
+  nota:{e:4,a:73,c:72,txt:'Mesmo teste do Corolla Híbrido, nov/2024, 7 airbags.'}, pm:{l:470,txt:''}, lojas:['toyota'],
+  pq:'Mesmo carro do Híbrido, mesma nota e mesmo porta-malas, custando R$ 1,6 mil a mais por ano por gastar mais combustível. Só vale bem abaixo da FIPE.',
+  chk:['Compare com um Híbrido do mesmo ano']},
+ {id:'tera26', nome:'VW Tera 0km', anos:'2026, FIPE R$ 124.920', st:'sose', zero:true, proj:true, P:124920, N:16584, custo:27514, pmin:25328, pmax:30637, dep:10930, comb:8087, seg:4809, man:1464, ipva:2224, fipe:124920, rev:81198, liq:2, gar:36, cf:3.8, kml:11.5, en:'Flex',
+  cen:[{n:'Otimista',d:'retém 72%',rev:89942,c:25328},{n:'Base',d:'retém 65%',rev:81198,c:27514},{n:'Pessimista',d:'retém 55%',rev:68706,c:30637}],
+  nota:{e:5,a:90,c:87,txt:'Teste de jun/2025 com 6 airbags.'}, pm:{l:350,txt:'Pequeno para carrinho.'}, lojas:['vw'],
+  pq:'5 estrelas e 36 meses de garantia, mas nem no cenário otimista cabe no teto, e tem só 350 litros. É um modelo novo, sem histórico de revenda.',
+  chk:['Coloque o carrinho no porta-malas']},
+ {id:'tiggo5x', nome:'Caoa Chery Tiggo 5X Híbrido', anos:'2024', st:'sose', custo:21183, dep:6821, comb:6000, seg:4535, man:1667, ipva:2160, fipe:117564, rev:90279, liq:2, gar:48, cf:4.4, kml:15.5, en:'Híbrido leve',
+  nota:{e:null,txt:'Nunca testado.'}, pm:{l:340,txt:'Pequeno para carrinho.'}, lojas:['chery'],
+  pq:'Barato por ano e com 48 meses de garantia. É híbrido leve, que economiza pouco, e o porta-malas de 340 litros é pequeno para família.',
+  chk:['Coloque o carrinho no porta-malas','Pergunte sobre importação regular e peças']},
+ {id:'stonic', nome:'Kia Stonic Híbrido', anos:'2024', st:'sose', custo:23026, dep:9263, comb:6118, seg:3688, man:2112, ipva:1844, fipe:104859, rev:67806, liq:3, gar:36, cf:4.6, kml:15.2, en:'Híbrido leve',
+  nota:{e:null,txt:'Nunca testado pelo Latin NCAP.'}, pm:{l:325,txt:'Pequeno para carrinho.'}, lojas:[], semLoja:'Não confirmei concessionária Kia na região.',
+  pq:'Bom conforto e 36 meses de garantia, mas é híbrido leve, perde 35% do valor em 4 anos e tem só 325 litros.',
+  chk:['Coloque o carrinho no porta-malas']},
+ {id:'polo23', nome:'VW Polo', anos:'2023', st:'sose', custo:20339, dep:3843, comb:7881, seg:3633, man:3367, ipva:1615, fipe:87883, rev:72512, liq:4, gar:0, cf:3.6, kml:11.8, en:'Flex',
+  nota:{e:3,a:73,c:71,txt:'Teste de dez/2022 com 4 airbags.'}, pm:{l:300,txt:'Estimado. Hatch pequeno.'}, lojas:['vw','localiza','movida'],
+  pq:'Barato e com boa revenda, mas é hatch, com uns 300 litros e conforto 3,6. Só faz sentido se o carrinho couber.',
+  chk:['Coloque o carrinho no porta-malas']},
+ {id:'wrv26', nome:'Honda WR-V 0km', anos:'2026, FIPE R$ 131.176', st:'sose', zero:true, proj:true, P:131176, N:16830, custo:28308, pmin:26013, pmax:31588, dep:11478, comb:8087, seg:4735, man:1673, ipva:2335, fipe:131176, rev:85264, liq:3, gar:36, cf:4.4, kml:11.5, en:'Flex',
+  cen:[{n:'Otimista',d:'retém 72%',rev:94447,c:26013},{n:'Base',d:'retém 65%',rev:85264,c:28308},{n:'Pessimista',d:'retém 55%',rev:72147,c:31588}],
+  nota:{e:null,txt:'Nunca testado. O teste de 2022 é do WR-V antigo.'}, pm:{l:null,txt:'Não confirmei para a geração nova.'}, lojas:['honda'],
+  pq:'Geração nova da Honda com 36 meses de garantia. Passa do teto em todos os cenários e nunca foi testado.',
+  chk:['Coloque o carrinho no porta-malas']},
+ {id:'tcross25', nome:'VW T-Cross', anos:'2025 e 2026, números do 2025', st:'sose', custo:25513, dep:7581, comb:8455, seg:4761, man:2336, ipva:2381, fipe:132747, rev:102424, liq:4, gar:24, cf:4.4, kml:11, en:'Flex',
+  nota:{e:5,a:92,c:90,txt:'Teste de set/2024. Vale só para chassi de ano 2025 em diante.'}, pm:{l:373,txt:'420 com o banco traseiro à frente.'}, lojas:['vw','localiza','movida'],
+  pq:'5 estrelas e revenda forte, mas passa do teto e tem porta-malas pequeno. A VW oferece até R$ 37,6 mil de desconto no 0km, só para PCD.',
+  chk:['Confirme pelo chassi que é ano 2025 ou mais novo','Coloque o carrinho no porta-malas']},
+ {id:'king26', nome:'BYD King GL 0km', anos:'2026, tabela R$ 172.990, FIPE R$ 153.784', st:'sose', zero:true, proj:true, P:153784, N:16249, custo:29705, pmin:27014, pmax:33549, dep:13456, comb:5924, seg:6290, man:1298, ipva:2737, fipe:153784, rev:99960, liq:2, gar:72, cf:4.8, kml:15.7, en:'Híbrido plug-in, roda sem tomada',
+  cen:[{n:'Otimista',d:'retém 72%',rev:110724,c:27014},{n:'Base',d:'retém 65%',rev:99960,c:29705},{n:'Pessimista',d:'retém 55%',rev:84581,c:33549}],
+  nota:{e:null,txt:'Nunca testado.'}, pm:{l:450,txt:'A BYD mede com água.'}, lojas:['byd'],
+  pq:'A FIPE do King 2026 já está R$ 19 mil abaixo da tabela. Mesmo comprando pelo preço da FIPE, que é o otimista, passa do teto. Calculei com o consumo do Inmetro sem recarga. O King 2025 seminovo sai bem mais barato.',
+  chk:['Compare com um King 2025 seminovo','Rode com a bateria descarregada']},
+ {id:'jaecoo5', nome:'Jaecoo 5 Comfort 0km', anos:'R$ 154.990 no lote inicial', st:'sose', zero:true, proj:true, P:154990, N:17068, custo:30629, pmin:27917, pmax:34504, dep:13562, comb:6370, seg:6339, man:1600, ipva:2759, fipe:154990, rev:100744, liq:null, gar:84, cf:null, kml:14.6, en:'Híbrido pleno a gasolina',
+  cen:[{n:'Otimista',d:'retém 72%',rev:111593,c:27917},{n:'Base',d:'retém 65%',rev:100744,c:30629},{n:'Pessimista',d:'retém 55%',rev:85244,c:34504}],
+  nota:{e:null,txt:'Nunca testado.'}, pm:{l:410,txt:'Número da marca para o Brasil.'}, lojas:['jaecoo'],
+  pq:'Híbrido pleno de 224 cv com 7 anos de garantia e 410 litros. Lançado em outubro de 2026, com marca nova no Brasil e sem histórico de revenda. Passa do teto em todos os cenários.',
+  chk:['Pergunte quantas unidades do lote de R$ 154.990 ainda restam','Confirme a rede de oficinas e peças na região']},
+ {id:'omoda5', nome:'Omoda 5 HEV Luxury 0km', anos:'R$ 159.990', st:'sose', zero:true, proj:true, P:159990, N:17564, custo:31563, pmin:28763, pmax:35563, dep:13999, comb:6572, seg:6544, man:1600, ipva:2848, fipe:159990, rev:103994, liq:null, gar:84, cf:null, kml:14.2, en:'Híbrido pleno a gasolina',
+  cen:[{n:'Otimista',d:'retém 72%',rev:115193,c:28763},{n:'Base',d:'retém 65%',rev:103994,c:31563},{n:'Pessimista',d:'retém 55%',rev:87994,c:35563}],
+  nota:{e:null,txt:'Nunca testado.'}, pm:{l:372,txt:'Pequeno para carrinho.'}, lojas:['jaecoo'],
+  pq:'Mesmo conjunto híbrido do Jaecoo 5 e 7 anos de garantia, com porta-malas de 372 litros. Marca nova e revenda incerta. Passa do teto em todos os cenários.',
+  chk:['Coloque o carrinho no porta-malas']},
+ {id:'nivushl', nome:'VW Nivus Highline 0km em oferta', anos:'R$ 128.990, tabela R$ 173.290', st:'vale', zero:true, proj:true, P:128990, N:16901, custo:23995, pmin:19836, pmax:28187, dep:7094, comb:8304, seg:4837, man:1464, ipva:2296, fipe:128990, fipeRef:158759, rev:100612, liq:3, gar:36, cf:4.4, kml:11.2, en:'Flex',
+  cen:[{n:'Melhor',d:'FIPE segura em R$ 158,8 mil e cai 22%',rev:123832,c:19836},{n:'Provável',d:'FIPE desce até o preço da oferta e cai 22%',rev:100612,c:23995},{n:'Ruim',d:'retém 65% do preço pago',rev:83844,c:28187}],
+  nota:{e:5,a:92,c:92,txt:'Teste de set/2022 com 6 airbags. Sem restrição de chassi.'}, pm:{l:415,txt:''}, lojas:['vw'],
+  pq:'O único 0km que pode sair mais barato que um seminovo. A oferta fica 19% abaixo da FIPE do Highline, e o Nivus tem curva de revenda medida, que perde 22% em 4 anos. No cenário provável custa R$ 24 mil por ano com 5 estrelas e 36 meses de garantia.',
+  alerta:'A oferta era da primeira quinzena de outubro. Ligue antes para saber se ainda vale.',
+  chk:['Confirme que o preço de R$ 128.990 ainda vale e é para a versão Highline','Pergunte se a taxa 0% da VW se combina com esse preço','Coloque o carrinho no porta-malas']},
+ {id:'kardian25', nome:'Renault Kardian', anos:'2025', st:'vale', custo:21285, dep:5517, comb:8087, seg:3848, man:2044, ipva:1790, fipe:96853, rev:74786, liq:2, gar:24, cf:3.8, kml:11.5, en:'Flex',
+  nota:{e:4,a:83,c:83,txt:'Teste de dez/2024 com 6 airbags. A versão de agosto de 2025 em diante subiu para 5 estrelas com frenagem automática para pedestres.'}, pm:{l:410,txt:''}, lojas:['renault'],
+  pq:'Seminovo do Kardian com 4 estrelas por R$ 21,3 mil por ano, ainda com 24 meses de garantia. Sai R$ 3,9 mil por ano mais barato que o 0km no cenário base. A revenda é o ponto fraco.',
+  chk:['Teste o banco traseiro com a cadeirinha','Veja quanto resta de garantia e se ela passa para você']},
+ {id:'kicksnovo', nome:'Nissan Kicks novo 0km', anos:'2026, Sense a partir de R$ 159.990', st:'sose', zero:true, proj:true, P:159990, N:18178, custo:32178, pmin:29378, pmax:36177, dep:13999, comb:8087, seg:5744, man:1500, ipva:2848, fipe:159990, rev:103994, liq:null, gar:null, cf:null, kml:11.5, en:'Flex turbo, câmbio de dupla embreagem',
+  cen:[{n:'Otimista',d:'retém 72%',rev:115193,c:29378},{n:'Base',d:'retém 65%',rev:103994,c:32178},{n:'Pessimista',d:'retém 55%',rev:87994,c:36177}],
+  nota:{e:5,a:86,c:92,txt:'Teste de dez/2025 com 6 airbags. Confirmado para o feito no Brasil em 13/10/2026.'}, pm:{l:470,txt:''}, lojas:['nissan'],
+  pq:'5 estrelas, 92% para criança e 470 litros, a combinação ideal para família. Mas é 0km de R$ 160 mil e passa de R$ 29 mil por ano até no cenário otimista. Usa câmbio de dupla embreagem, que pede mais atenção.',
+  chk:['Pergunte o prazo de garantia e se cobre o câmbio','Coloque o carrinho no porta-malas']},
+ {id:'hb20s22', nome:'Hyundai HB20S', anos:'2020 a 2022, números do 2022', st:'evite', custo:19390, dep:3392, comb:7881, seg:3303, man:3378, ipva:1436, fipe:76552, rev:62985, liq:5, gar:12, cf:3.4, kml:11.8, en:'Flex',
+  nota:{e:0,a:19,c:10,txt:'Teste de dez/2020 com 2 airbags, feito no HB20 hatch.'}, pm:{l:475,txt:''}, lojas:['hyundai','localiza','movida'],
+  pq:'Barato, mas tem a pior proteção infantil da lista, 10%. A partir do 2023 o carro mudou e subiu para 3 estrelas.', chk:[]},
+ {id:'kicks23', nome:'Nissan Kicks, geração antiga', anos:'2023', st:'evite', custo:22803, dep:5117, comb:8455, seg:3535, man:3928, ipva:1768, fipe:98585, rev:78115, liq:3, gar:0, cf:4.4, kml:11, en:'Flex',
+  nota:{e:null,txt:'Só teste de 2017, regras antigas, com 2 airbags.'}, pm:{l:432,txt:''}, lojas:['nissan'],
+  pq:'Está aqui para você não confundir. As 5 estrelas são do Kicks novo, lançado em 2025. O vendedor pode chamar os dois de Kicks.', chk:[]},
+ {id:'cruze23', nome:'Chevrolet Cruze', anos:'2023', st:'evite', custo:23589, dep:4898, comb:8857, seg:4218, man:3507, ipva:2109, fipe:112013, rev:92420, liq:2, gar:0, cf:4.8, kml:10.5, en:'Flex',
+  nota:{e:null,txt:'Teste de 2019, regras antigas, com 6 airbags.'}, pm:{l:null,txt:'Não confirmei.'}, lojas:['localiza','movida'], semLoja:'Não confirmei concessionária Chevrolet na região.',
+  pq:'Confortável e barato por ano, mas saiu de linha em 2024. Em 4 anos você vai vender um sedã descontinuado.', chk:[]},
+ {id:'fastback23', nome:'Fiat Fastback', anos:'2023', st:'evite', custo:23585, dep:5873, comb:8611, seg:4036, man:3142, ipva:1922, fipe:105373, rev:81880, liq:3, gar:0, cf:4.4, kml:10.8, en:'Flex',
+  nota:{e:null,txt:'Nunca testado. A mesma base, no Pulse, tirou 2 estrelas.'}, pm:{l:516,txt:'A Fiat mede com água. O real é menor.'}, lojas:[], semLoja:'Não confirmei concessionária Fiat na região.',
+  pq:'Parece ter muito espaço por pouco, mas a medida é da Fiat, com água, e o carro irmão tirou 2 estrelas.', chk:[]},
+ {id:'pulse24', nome:'Fiat Pulse', anos:'2024', st:'evite', custo:21359, dep:4529, comb:8611, seg:4018, man:2332, ipva:1869, fipe:100349, rev:82234, liq:3, gar:12, cf:4.4, kml:10.8, en:'Flex',
+  nota:{e:2,a:67,c:56,txt:'Teste de 2023 com 4 airbags.'}, pm:{l:370,txt:'A Fiat mede com água. O real fica perto de 320.'}, lojas:[], semLoja:'Não confirmei concessionária Fiat na região.',
+  pq:'2 estrelas e porta-malas pequeno.', chk:[]},
+ {id:'cronos24', nome:'Fiat Cronos', anos:'2024', st:'evite', custo:19513, dep:4184, comb:8087, seg:3601, man:2041, ipva:1600, fipe:85899, rev:69164, liq:4, gar:12, cf:4.0, kml:11.5, en:'Flex',
+  nota:{e:0,a:24,c:10,txt:'Teste de dez/2021 com 2 airbags.'}, pm:{l:525,txt:'Medida da Fiat.'}, lojas:[], semLoja:'Não confirmei concessionária Fiat na região.',
+  pq:'Tem um dos maiores porta-malas, mas tirou zero estrela com 10% em proteção infantil.', chk:[]},
+ {id:'duster24', nome:'Renault Duster', anos:'2024', st:'evite', custo:21628, dep:4233, comb:9490, seg:3271, man:2999, ipva:1636, fipe:88144, rev:71212, liq:2, gar:12, cf:4.4, kml:9.8, en:'Flex',
+  nota:{e:0,a:29,c:23,txt:'Teste de ago/2021 com 2 airbags. Versões com mais airbags não foram testadas.'}, pm:{l:475,txt:''}, lojas:['renault'],
+  pq:'Espaçoso e barato, mas 23% em proteção infantil no último teste.', chk:[]},
+ {id:'yaris23', nome:'Toyota Yaris Sedan', anos:'2023', st:'evite', custo:18951, dep:3531, comb:7440, seg:3356, man:2946, ipva:1678, fipe:90169, rev:76043, liq:4, gar:0, cf:4.0, kml:12.5, en:'Flex',
+  nota:{e:2,a:66,c:64,txt:'Teste de dez/2025 com 6 airbags. A nota infantil caiu porque não há chave para desligar o airbag do passageiro. Não confirmei se a versão testada é a brasileira de 2023.'}, pm:{l:473,txt:''}, lojas:['toyota'],
+  pq:'O mais barato da lista inteira, R$ 19 mil por ano, com 473 litros. Tirou 2 estrelas no teste mais recente.', chk:[]},
+ {id:'yariscross26', nome:'Toyota Yaris Cross XRE Hybrid 0km', anos:'2026, tabela R$ 172.390', st:'evite', zero:true, proj:true, P:170461, N:17095, custo:32011, pmin:29028, pmax:36272, dep:14915, comb:6118, seg:6563, man:1380, ipva:3034, fipe:170461, rev:110800, liq:2, gar:36, cf:4.6, kml:15.2, en:'Híbrido pleno flex',
+  cen:[{n:'Otimista',d:'retém 72%',rev:122732,c:29028},{n:'Base',d:'retém 65%',rev:110800,c:32011},{n:'Pessimista',d:'retém 55%',rev:93754,c:36272}],
+  nota:{e:2,a:77,c:69,txt:'Teste de dez/2025 com 6 airbags, versão feita em Sorocaba. Faltou frenagem automática e chave para desligar o airbag do passageiro.'}, pm:{l:391,txt:'Na versão híbrida, a bateria tira espaço.'}, lojas:['toyota'],
+  pq:'Híbrido Toyota com marca de revenda forte, mas 2 estrelas no teste de dezembro de 2025 e acima de R$ 29 mil por ano em qualquer cenário. O Corolla Híbrido seminovo entrega mais por menos.', chk:[]},
+ {id:'arrizo6', nome:'Caoa Chery Arrizo 6 Híbrido', anos:'2024', st:'evite', custo:19716, dep:5351, comb:6118, seg:4443, man:1737, ipva:2067, fipe:110525, rev:89119, liq:2, gar:48, cf:4.8, kml:15.2, en:'Híbrido leve',
+  nota:{e:null,txt:'Nunca testado.'}, pm:{l:405,txt:''}, lojas:['chery'],
+  pq:'Barato e com 48 meses de garantia, mas as vendas foram suspensas em março de 2026 e há relato de câmbio parado sem peça. Garantia sem peça não serve.', chk:[]},
+ {id:'basalt25', nome:'Citroën Basalt', anos:'2025', st:'evite', custo:22924, dep:7243, comb:8087, seg:3606, man:2271, ipva:1717, fipe:97507, rev:68533, liq:2, gar:24, cf:3.8, kml:11.5, en:'Flex',
+  nota:{e:0,a:39,c:58,txt:'Teste de out/2025 com 4 airbags.'}, pm:{l:490,txt:'Medida da Citroën.'}, lojas:[], semLoja:'Não confirmei concessionária Citroën na região.',
+  pq:'Porta-malas grande, mas zero estrela no teste de 2025.', chk:[]},
+ {id:'p2008', nome:'Peugeot 2008', anos:'2023', st:'evite', custo:22396, dep:5675, comb:8087, seg:3188, man:3928, ipva:1518, fipe:87393, rev:64695, liq:2, gar:0, cf:3.8, kml:11.5, en:'Flex',
+  nota:{e:1,a:42,c:59,txt:'Teste de jun/2025 com 4 airbags. Faltou proteção lateral para a cabeça.'}, pm:{l:null,txt:'Não confirmei.'}, lojas:['peugeot'],
+  pq:'1 estrela no teste de 2025 e conforto 3,8.', chk:[]},
+ {id:'atto2', nome:'BYD Atto 2 GL 0km', anos:'R$ 149.990 em oferta, tabela R$ 159.990', st:'evite', zero:true, proj:true, P:149990, N:16667, custo:29791, pmin:27167, pmax:33541, dep:13124, comb:6370, seg:6135, man:1493, ipva:2670, fipe:149990, rev:97494, liq:null, gar:72, cf:null, kml:14.6, en:'Híbrido plug-in flex, roda sem tomada',
+  cen:[{n:'Otimista',d:'retém 72%',rev:107993,c:27167},{n:'Base',d:'retém 65%',rev:97494,c:29791},{n:'Pessimista',d:'retém 55%',rev:82494,c:33541}],
+  nota:{e:null,txt:'Nunca testado.'}, pm:{l:256,txt:'Pelo método padrão. A BYD anuncia 455, medido com água.'}, lojas:['byd'],
+  pq:'Lançado em junho de 2026, sem histórico de preço. Passa do teto em todos os cenários e o porta-malas real é o menor da lista. A favor dele: 6 anos de garantia e fábrica em Camaçari.', chk:[]}
+];
+
+const OFERTAS = [
+ {carro:'VW Nivus Highline 0km', de:173290, por:128990, quem:'Público, em algumas lojas', val:'1ª quinzena de outubro', st:'fim', fonte:'Webmotors', url:'https://www.webmotors.com.br/wm1/seu-bolso/volkswagen-nivus-desconto', obs:'Pode ter acabado. Pergunte mesmo assim. Nas contas do guia, é o 0km com a melhor projeção da lista.'},
+ {carro:'VW, vários modelos', txt:'Taxa 0% e até R$ 83 mil de desconto', quem:'Público, pronta entrega', val:'Até 31/10', st:'ok', fonte:'VW', url:'https://ofertas.vw.com.br/'},
+ {carro:'VW Virtus Sense 2026', de:116690, por:105021, quem:'Só CNPJ', val:'Outubro', st:'restr', fonte:'Mundo do Automóvel para PCD', url:'https://mundodoautomovelparapcd.com.br/volkswagen-virtus-para-cnpj-em-outubro-de-2026/'},
+ {carro:'VW T-Cross', txt:'Até R$ 37,6 mil de desconto', quem:'Só PCD', val:'Outubro', st:'restr', fonte:'Mundo do Automóvel para PCD', url:'https://mundodoautomovelparapcd.com.br/resumo-semanal-precos-para-pcd-do-taos-fastback-t-cross-virtus-kait-spin-e-mais/'},
+ {carro:'Nissan Kicks novo', txt:'Até R$ 25,4 mil de desconto', quem:'Só PCD', val:'Outubro', st:'restr', fonte:'Busca de mercado', url:''},
+ {carro:'Hyundai HB20 2026/2027 manual', de:96140, por:83641, quem:'CNPJ ou MEI, com isenção', val:'09/10 a 04/11', st:'restr', fonte:'Hyundai', url:'https://www.hyundai.com.br/ofertas.html'},
+ {carro:'Toyota Corolla Cross XRE', de:194790, por:179990, quem:'Público', val:'Acabou em 12/10', st:'fim', fonte:'A Tarde', url:'https://atarde.com.br/autos/yaris-cross-corolla-cross-hilux-e-sw4-tem-descontos-de-ate-r-54-mil-1404904', obs:'Mostra a margem que a Toyota tem para cortar.'},
+ {carro:'BYD Song Pro GL 2027', de:196990, por:176990, quem:'Público', val:'Enquanto durar o estoque', st:'ok', fonte:'Mix Vale', url:'https://www.mixvale.com.br/2026/10/15/byd-atto-2-e-jaecoo-5-lideram-carros-hibridos-mais-baratos-do-pais/'},
+ {carro:'BYD Atto 2 GL', de:159990, por:149990, quem:'Público', val:'Outubro', st:'ok', fonte:'Mix Vale', url:'https://www.mixvale.com.br/2026/10/15/byd-atto-2-e-jaecoo-5-lideram-carros-hibridos-mais-baratos-do-pais/'},
+ {carro:'Jaecoo 5 Comfort', de:159990, por:154990, quem:'Público, lote de 3.600 unidades', val:'Até acabar o lote', st:'ok', fonte:'O Tempo', url:'https://www.otempo.com.br/autotempo/2026/9/30/jaecoo-5-chega-ao-brasil-a-partir-de-r-154-990-com-motor-hibrido-de-224-cv'},
+ {carro:'BYD Dolphin, elétrico', de:149990, por:129900, quem:'Público', val:'Outubro', st:'ok', fonte:'SpaceMoney', url:'https://www.spacemoney.com.br/economia/byd-dolphin-desconto-outubro-brasil', obs:'Não serve sem tomada, mas é o sinal mais forte da guerra de preço e derruba os BYD usados.'}
+];
+
+const JANELAS = [
+ {q:'Até 31 de outubro', t:'Ofertas da VW e fim de mês', p:'A VW tem taxa 0% e descontos até o fim do mês, e os últimos dias de qualquer mês são quando o vendedor mais cede para bater meta. Se o Virtus ou o Nivus forem os escolhidos, esta é a janela mais concreta.'},
+ {q:'Últimos dias de cada mês', t:'Meta mensal da loja', p:'Vendedor com meta cede mais entre os dias 25 e 31. Vale para seminovo também. Próximas janelas: 26 a 30/11 e a última semana de dezembro.'},
+ {q:'27 de novembro de 2026', t:'Black Friday', p:'Reportagens apontam novembro e dezembro como a janela mais forte do ano. Não encontrei promoções de Black Friday já anunciadas para carros em 2026.'},
+ {q:'Dezembro e janeiro', t:'Meta anual e troca de ano modelo', p:'As montadoras fecham o ano e o ano modelo 2027 já começou a chegar, como Song Pro, Kwid e Dolphin Mini 2027. Estoque de ano modelo 2026 tende a ser liquidado.'},
+ {q:'Janeiro e fevereiro', t:'Mais seminovo à venda', p:'Uma loja de seminovos indica mais oferta e menos procura no começo do ano. É fonte de vendedor, então trate como pista. Os preços de seminovos já vinham desacelerando segundo reportagem de setembro de 2026.'},
+ {q:'Sempre', t:'Chegada de concorrente', p:'Cada marca chinesa nova força corte nas outras. A DFM começa a entregar em novembro e o Leapmotor B10 chegou às lojas em 15/10. A pressão de preço deve continuar até 2027.'}
+];
+
+const CHK_CARRO = ['Leve o carrinho dobrado, ou as medidas dele, e coloque no porta-malas com uma mochila','Prenda a cadeirinha ou o bebê conforto no ISOFIX do banco de trás','Repare quanto você precisa se curvar e quanto a porta traseira abre','Confira se a versão tem 6 airbags','Rode em trânsito lento e num trecho de estrada','Em híbrido, rode com a bateria descarregada'];
+const CHK_PAPEL = ['Consulte recall pelo chassi no site da montadora','Peça histórico de revisões com notas','Peça laudo cautelar','Confira quanto resta de garantia e se ela passa para você','Peça cotação de seguro com a placa ou o chassi'];
+const CHK_NEG = ['Leve o preço da Localiza e da Movida para o mesmo modelo','Use os cortes de preço do 0km para negociar o seminovo','Pergunte por condição para CNPJ ou MEI','Negocie nos últimos dias do mês','Compare o preço pedido com a FIPE de referência do guia'];
+
+const SAIDAS = [
+ {t:'Saída 1: sábado de manhã, Via Expressa', sub:'Toyota e Honda fecham às 13h. A Caoa Chery fecha às 14h e fica no caminho de volta.', paradas:[
+   {h:'9h00', loja:'toyota', ver:'Corolla Híbrido e Corolla Cross Híbrido, um atrás do outro'},
+   {h:'10h45', loja:'honda', ver:'City Sedan'},
+   {h:'12h15', loja:'chery', ver:'Tiggo 7'}]},
+ {t:'Saída 2: fim de tarde, Kobrasol e Campinas', sub:'Tudo perto. Faça Localiza e Movida primeiro, o preço delas vira sua régua.', paradas:[
+   {h:'1', loja:'localiza', ver:'Tracker, Onix Plus, Virtus e Creta de frota. Anote os preços'},
+   {h:'2', loja:'movida', ver:'Segunda referência de preço'},
+   {h:'3', loja:'vw', ver:'Virtus, Nivus e T-Cross. Pergunte pelas ofertas até 31/10'},
+   {h:'4', loja:'hyundai', ver:'Creta'}]},
+ {t:'Saída 3: Praia Comprida e BR-101', sub:'Renault e Nissan ficam no mesmo endereço.', paradas:[
+   {h:'1', loja:'renault', ver:'Kardian 2026, confira a data de produção'},
+   {h:'2', loja:'nissan', ver:'Versa'},
+   {h:'3', loja:'byd', ver:'King 2025. Rode com a bateria descarregada'}]}
+];
+
+const FONTES = [
+ ['Latin NCAP, resultados oficiais','https://www.latinncap.com/en/results'],
+ ['Latin NCAP, HB20 com 6 airbags tem 3 estrelas','https://www.latinncap.com/en/media-area/new/864f87297629fc/latin-ncaps-latest-result-hyundai-new-hb20-improves-to-three-stars'],
+ ['Yaris e Yaris Cross com 2 estrelas, dez/2025','https://www.autoblog.com.uy/2025/12/latin-ncap-toyota-yaris-y-yaris-cross.html'],
+ ['Peugeot 2008 com 1 estrela','https://www.cnnbrasil.com.br/auto/peugeot-2008-tira-so-1-estrela-em-teste-de-seguranca-do-latin-ncap/'],
+ ['Citroën Basalt com zero estrela','https://olhardigital.com.br/2025/10/14/carros-e-tecnologia/citroen-basalt-tira-nota-zero-em-teste-de-seguranca-veja-o-video/'],
+ ['Kardian com 5 estrelas e Taos','https://carro.blog.br/noticias/seguranca/renault-kardian-e-volkswagen-taos-recebem-cinco-estrelas-no-latin-ncap.html'],
+ ['Atto 2: 455 litros em água, 256 pelo método padrão','https://www.gruposentinela.com.br/byd-atto-2-precos-versoes-equipamentos-e-consumo-do-suv-hibrido-plug-in/'],
+ ['Jaecoo 5 no Brasil','https://www.otempo.com.br/autotempo/2026/9/30/jaecoo-5-chega-ao-brasil-a-partir-de-r-154-990-com-motor-hibrido-de-224-cv'],
+ ['Omoda 5 HEV: preço, consumo e porta-malas','https://motorshow.com.br/omoda-5-hev-precos-motor-equipamentos'],
+ ['Recall do airbag de Virtus e Nivus','https://garagem360.com.br/alerta-de-recall-para-vw-virtus-nivus-e-saveiro-por-airbag-fatal-entenda/'],
+ ['Arrizo 6 com vendas suspensas','https://www.vrum.com.br/mercado/2026/03/7373070-caoa-chery-suspende-vendas-de-arrizo-6-e-icar-no-brasil.html'],
+ ['Porta-malas dos sedãs','https://motorshow.com.br/veja-6-sedans-pequenos-0-km-que-tem-porta-malas-enormes'],
+ ['Porta-malas dos SUVs pequenos','https://motorshow.com.br/suvs-com-maiores-porta-malas'],
+ ['Melhor época para comprar carro','https://revistaforum.com.br/forumtudo/2026/02/15/qual-a-melhor-epoca-do-ano-para-comprar-um-veiculo-e-conseguir-desconto'],
+ ['Preço dos seminovos desacelera','https://investnews.com.br/videos/fim-do-efeito-seminovo-por-que-o-preco-dos-carros-usados-cai/'],
+ ['Novas marcas chinesas em 2026','https://www.otempo.com.br/autotempo/2026/5/4/de-dongfeng-a-lepas-as-6-novas-marcas-chinesas-a-caminho-do-brasil']
+];
+
+/* ---------- utilitários ---------- */
+const $ = id => document.getElementById(id);
+const brl = n => 'R$ ' + Math.round(n).toLocaleString('pt-BR');
+const mil = n => 'R$ ' + (n/1000).toLocaleString('pt-BR',{minimumFractionDigits:1, maximumFractionDigits:1}) + ' mil';
+const norm = s => (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const virg = n => n.toLocaleString('pt-BR',{minimumFractionDigits:1, maximumFractionDigits:1});
+
+/* estado salvo neste aparelho. localStorage pode falhar em aba anônima, então tudo em try */
+const CHAVE = 'guia-carro-v1';
+let E = {m:{}, n:{}, k:{}, g:{}, f:{teto:25000, st:['prio','vale','sose'], loja:'', ordem:'custo', so:false}};
+try{ const s = JSON.parse(localStorage.getItem(CHAVE)); if(s) E = Object.assign(E, s, {f:Object.assign(E.f, s.f||{})}); }catch(e){}
+const salvar = () => { try{ localStorage.setItem(CHAVE, JSON.stringify(E)); }catch(e){} };
+
+let toastT;
+function toast(t){ const el = $('toast'); el.textContent = t; el.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(()=>el.classList.remove('on'), 1800); }
+
+/* ---------- tema ---------- */
+(function(){
+  try{ const t = localStorage.getItem('guia-tema'); if(t) document.documentElement.setAttribute('data-theme', t); }catch(e){}
+  $('tema').onclick = () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const escuroSis = matchMedia('(prefers-color-scheme: dark)').matches;
+    const novo = cur ? (cur === 'dark' ? 'light' : 'dark') : (escuroSis ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', novo);
+    try{ localStorage.setItem('guia-tema', novo); }catch(e){}
+  };
+})();
+
+/* ---------- navegação por abas ---------- */
+const ABAS = [
+ ['carros','Carros','<path d="M3 15l1.6-4.6A2.5 2.5 0 0 1 7 8.7h10a2.5 2.5 0 0 1 2.4 1.7L21 15v4a1 1 0 0 1-1 1h-1.5a1 1 0 0 1-1-1v-1h-11v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/>'],
+ ['roteiro','Roteiro','<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>'],
+ ['quando','Ofertas','<path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/>'],
+ ['checklist','Checklist','<path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>'],
+ ['metodo','Método','<circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/>']
+];
+$('navIn').style.gridTemplateColumns = 'repeat(' + ABAS.length + ',1fr)';
+$('navIn').innerHTML = ABAS.map(([id,rot,svg]) =>
+  `<a href="#${id}" data-aba="${id}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${svg}</svg>${rot}</a>`).join('');
+function mostrarAba(){
+  const id = (location.hash || '#carros').slice(1).split('-')[0];
+  const alvo = ABAS.some(a => a[0] === id) ? id : 'carros';
+  ABAS.forEach(([a]) => { $(a).hidden = a !== alvo; });
+  document.querySelectorAll('.nav a').forEach(a => a.toggleAttribute('aria-current', a.dataset.aba === alvo));
+  document.querySelectorAll('.nav a').forEach(a => { if(a.dataset.aba === alvo) a.setAttribute('aria-current','page'); });
+  window.scrollTo(0, 0);
+}
+addEventListener('hashchange', mostrarAba);
+
+/* ---------- filtros ---------- */
+function montaFiltros(){
+  const cont = {prio:0, vale:0, sose:0, evite:0};
+  CARROS.forEach(c => cont[c.st]++);
+  $('chipsSt').innerHTML = Object.keys(ST).map(k =>
+    `<button class="chip" type="button" data-st="${k}" aria-pressed="${E.f.st.includes(k)}">${ST[k].curto}<span class="n">${cont[k]}</span></button>`).join('');
+  const usadas = new Set(); CARROS.forEach(c => c.lojas.forEach(l => usadas.add(l)));
+  $('loja').innerHTML = '<option value="">Todas as lojas</option>' +
+    Object.keys(LOJAS).filter(k => usadas.has(k)).map(k => `<option value="${k}">${esc(LOJAS[k].nome)}</option>`).join('') +
+    '<option value="_sem">Sem loja confirmada</option>';
+  $('loja').value = E.f.loja; $('ordem').value = E.f.ordem; $('teto').value = E.f.teto;
+  $('soMarcados').setAttribute('aria-pressed', E.f.so);
+  $('chipsSt').onclick = ev => {
+    const b = ev.target.closest('.chip'); if(!b) return;
+    const k = b.dataset.st;
+    E.f.st = E.f.st.includes(k) ? E.f.st.filter(x => x !== k) : E.f.st.concat(k);
+    b.setAttribute('aria-pressed', E.f.st.includes(k)); salvar(); render();
+  };
+  $('teto').oninput = e => { E.f.teto = +e.target.value; salvar(); render(); };
+  $('loja').onchange = e => { E.f.loja = e.target.value; salvar(); render(); };
+  $('ordem').onchange = e => { E.f.ordem = e.target.value; salvar(); render(); };
+  $('q').oninput = () => render();
+  $('soMarcados').onclick = () => { E.f.so = !E.f.so; $('soMarcados').setAttribute('aria-pressed', E.f.so); salvar(); render(); };
+}
+
+const segScore = c => c.nota.e == null ? 2.5 : c.nota.e;
+function filtrados(){
+  const q = norm($('q').value);
+  const passa = [], esc0 = {teto:0, st:0};
+  CARROS.forEach(c => {
+    if(q && !norm(c.nome + ' ' + c.anos).includes(q)) return;
+    if(E.f.loja === '_sem' && c.lojas.length) return;
+    if(E.f.loja && E.f.loja !== '_sem' && !c.lojas.includes(E.f.loja)) return;
+    if(E.f.so && !E.m[c.id]) return;
+    if(c.custo > E.f.teto){ esc0.teto++; return; }
+    if(!E.f.st.includes(c.st)){ esc0.st++; return; }
+    passa.push(c);
+  });
+  const o = E.f.ordem;
+  passa.sort((a,b) => o === 'seg' ? (segScore(b) - segScore(a)) || (a.custo - b.custo)
+    : o === 'pm' ? ((b.pm.l||0) - (a.pm.l||0)) || (a.custo - b.custo)
+    : o === 'cf' ? ((b.cf||0) - (a.cf||0)) || (a.custo - b.custo)
+    : a.custo - b.custo);
+  return {passa, esc0};
+}
+
+/* ---------- card ---------- */
+function telBtn(l){ return l.tel ? `<a class="btn pri" href="tel:${l.tel}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Ligar</a>` : ''; }
+function mapaBtn(l){ return /não confirmada/i.test(l.end) ? '' : `<a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(l.nome + ', ' + l.end)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Mapa</a>`; }
+function lojaHTML(k){
+  const l = LOJAS[k];
+  return `<div class="loja"><b>${esc(l.nome)}</b><span class="end">${esc(l.end)}</span><span class="hor">${esc(l.hor)}</span><div class="acoes">${telBtn(l)}${mapaBtn(l)}</div></div>`;
+}
+function segFato(c){
+  const n = c.nota;
+  if(n.e == null) return `<li class="semTeste"><span class="k">Segurança</span><b>Sem teste</b><em>atual</em></li>`;
+  return `<li class="${n.e <= 2 ? 'ruim' : ''}"><span class="k">Segurança</span><b>${n.e}★</b><em>criança ${n.c}%</em></li>`;
+}
+const SEGS = [['dep','Perda de valor','--s1'],['comb','Combustível','--s2'],['seg','Seguro','--s3'],['man','Manutenção','--s4'],['ipva','IPVA','--s5']];
+function cardHTML(c){
+  const minha = E.m[c.id];
+  const rotMinha = {quero:'Quero ver', visitei:'Visitei', descartei:'Descartei'}[minha];
+  const soma = SEGS.reduce((a,[k]) => a + c[k], 0);
+  const barra = SEGS.map(([k,,cor]) => `<i style="width:${(c[k]/soma*100).toFixed(1)}%;background:var(${cor})"></i>`).join('');
+  const leg = SEGS.map(([k,rot,cor]) => `<li><span class="sq" style="background:var(${cor})"></span>${rot}<span class="v">${brl(c[k])}</span></li>`).join('');
+  const chks = (c.chk||[]);
+  const feitos = E.k[c.id] || [];
+  const rotBase = c.cen ? c.cen[1].n.toLowerCase() : 'base';
+  const custoTxt = c.proj
+    ? `<b>${mil(c.custo)}</b><span>por ano, cenário ${rotBase}</span><span class="proj">Projeção de ${virg(c.pmin/1000)} a ${virg(c.pmax/1000)} mil</span>`
+    : `<b>${mil(c.custo)}</b><span>por ano · ${brl(c.custo/12)} por mês</span>`;
+  /* quanto o carro precisa valer em 4 anos para caber no teto escolhido */
+  let precisa = '';
+  if(c.proj){
+    const req = 1 - 4*(E.f.teto - c.N)/c.P;
+    precisa = req > 1 ? `Nem de graça na revenda ele caberia em ${mil(E.f.teto).replace(',0 mil',' mil')} por ano.`
+      : `Para caber em ${mil(E.f.teto).replace(',0 mil',' mil')} por ano, ele precisa valer pelo menos <b>${Math.round(req*100)}% do preço pago</b> daqui a 4 anos, ou ${brl(req*c.P)}. O Corolla Híbrido, o carro que menos perde valor nesta lista, retém 72%.`;
+  }
+  const cenHTML = c.cen ? `<div class="bloco"><h4>Cenários de revenda em 4 anos</h4><dl class="kv">${
+    c.cen.map(x => `<dt>${esc(x.n)}: ${esc(x.d)}<br><span style="color:var(--ink-3);font-size:13px">vende por ${brl(x.rev)}</span></dt><dd>${mil(x.c)}</dd>`).join('')
+  }</dl><p style="margin-top:8px">${precisa}</p></div>` : '';
+  const lojas = c.lojas.map(lojaHTML).join('') + (c.semLoja ? `<p class="bloco" style="margin:4px 0 0;font-size:14px;color:var(--ink-2)">${esc(c.semLoja)}</p>` : '') +
+    (!c.lojas.length && !c.semLoja ? '<p style="font-size:14px;color:var(--ink-2);margin:0">Sem loja confirmada na região.</p>' : '');
+  return `<article class="card st-${c.st}" id="c-${c.id}">
+    <div class="cTopo"><span class="pill">${ST[c.st].nome}</span>${c.zero ? '<span class="tag0km">0km</span>' : ''}${rotMinha ? `<span class="minha">${rotMinha}</span>` : ''}</div>
+    <h3>${esc(c.nome)}<span class="anos">${esc(c.anos)}</span></h3>
+    <div class="custo">${custoTxt}</div>
+    <ul class="fatos">
+      ${segFato(c)}
+      <li><span class="k">Porta-malas</span><b>${c.pm.l ? c.pm.l + ' L' : '?'}</b><em>${c.pm.l ? (c.pm.l < 380 ? 'pequeno' : c.pm.l >= 470 ? 'grande' : 'médio') : 'não confirmado'}</em></li>
+      <li><span class="k">Conforto</span><b>${c.cf ? virg(c.cf) : '?'}</b><em>de 5</em></li>
+    </ul>
+    <p class="pq">${esc(c.pq)}</p>
+    ${c.alerta ? `<p class="alerta">${esc(c.alerta)}</p>` : ''}
+    <div class="marcar" role="group" aria-label="Marcar ${esc(c.nome)}">
+      <button type="button" data-m="quero" aria-pressed="${minha==='quero'}">Quero ver</button>
+      <button type="button" data-m="visitei" aria-pressed="${minha==='visitei'}">Visitei</button>
+      <button type="button" data-m="descartei" aria-pressed="${minha==='descartei'}">Descartei</button>
+    </div>
+    <details class="det">
+      <summary>Detalhes, checklist e onde ver</summary>
+      <div class="bloco"><h4>De onde vem o custo${c.proj ? ', cenário ' + rotBase : ''}</h4><div class="barra" aria-hidden="true">${barra}</div><ul class="legC">${leg}</ul></div>
+      ${cenHTML}
+      <div class="bloco"><h4>Referências</h4><dl class="kv">
+        <dt>${c.zero ? 'Preço considerado' : 'Preço de referência FIPE'}</dt><dd>${brl(c.fipe)}</dd>
+        ${c.fipeRef ? `<dt>FIPE da versão em 2026</dt><dd>${brl(c.fipeRef)}</dd>` : ''}
+        <dt>${c.proj ? 'Valor ao vender, cenário ' + rotBase : 'Valor ao vender em 4 anos'}</dt><dd>${brl(c.rev)}</dd>
+        <dt>Revenda</dt><dd>${c.liq ? c.liq + ' de 5' : 'sem histórico'}</dd>
+        <dt>Garantia de fábrica</dt><dd>${c.gar ? c.gar + ' meses' : c.gar === null ? 'não confirmei' : 'nenhuma'}</dd>
+        <dt>Consumo</dt><dd>${virg(c.kml)} km/l</dd>
+        <dt>Motor</dt><dd>${esc(c.en)}</dd>
+      </dl></div>
+      <div class="bloco"><h4>Segurança</h4><p>${c.nota.e != null ? `<b>${c.nota.e} estrela${c.nota.e===1?'':'s'}</b>, adulto ${c.nota.a}%, criança ${c.nota.c}%. ` : ''}${esc(c.nota.txt)}</p></div>
+      ${c.pm.txt ? `<div class="bloco"><h4>Porta-malas</h4><p>${esc(c.pm.txt)}</p></div>` : ''}
+      ${chks.length ? `<div class="bloco"><h4>No test drive, confira</h4><ul class="chk">${chks.map((t,i) =>
+        `<li><label><input type="checkbox" data-k="${i}" ${feitos[i] ? 'checked' : ''}><span>${esc(t)}</span></label></li>`).join('')}</ul></div>` : ''}
+      <div class="bloco"><h4>Onde ver</h4>${lojas}</div>
+      <div class="bloco"><h4>Minhas notas</h4><textarea data-notas aria-label="Notas sobre ${esc(c.nome)}" placeholder="Preço pedido, quilometragem, impressões">${esc(E.n[c.id]||'')}</textarea></div>
+    </details>
+  </article>`;
+}
+
+function render(){
+  $('tetoVal').textContent = mil(E.f.teto).replace(',0 mil',' mil');
+  $('sub').textContent = 'Carro para família, até ' + mil(E.f.teto).replace(',0 mil',' mil') + ' por ano';
+  const {passa, esc0} = filtrados();
+  const partes = [];
+  if(esc0.teto) partes.push(`${esc0.teto} acima do teto`);
+  if(esc0.st) partes.push(`${esc0.st} em avaliações desligadas`);
+  $('resumo').innerHTML = `Mostrando <b>${passa.length}</b> de ${CARROS.length} carros.` + (partes.length ? ` Escondidos: ${partes.join(' e ')}.` : '');
+  $('lista').innerHTML = passa.length ? passa.map(cardHTML).join('')
+    : '<div class="vazio">Nenhum carro passa nesses filtros. Aumente o teto ou ligue mais avaliações.</div>';
+}
+
+/* eventos dos cards por delegação, para não religar a cada render */
+$('lista').addEventListener('click', ev => {
+  const b = ev.target.closest('.marcar button'); if(!b) return;
+  const id = b.closest('.card').id.slice(2), m = b.dataset.m;
+  if(E.m[id] === m) delete E.m[id]; else E.m[id] = m;
+  salvar();
+  b.parentElement.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', E.m[id] === x.dataset.m));
+  const topo = b.closest('.card').querySelector('.cTopo'); let tag = topo.querySelector('.minha');
+  const rot = {quero:'Quero ver', visitei:'Visitei', descartei:'Descartei'}[E.m[id]];
+  if(rot){ if(!tag){ tag = document.createElement('span'); tag.className = 'minha'; topo.appendChild(tag); } tag.textContent = rot; }
+  else if(tag) tag.remove();
+  toast(rot ? 'Marcado como ' + rot.toLowerCase() : 'Marcação removida');
+});
+$('lista').addEventListener('change', ev => {
+  const cb = ev.target.closest('input[type=checkbox][data-k]'); if(!cb) return;
+  const id = cb.closest('.card').id.slice(2);
+  const arr = E.k[id] || []; arr[+cb.dataset.k] = cb.checked; E.k[id] = arr; salvar();
+});
+let notaT;
+$('lista').addEventListener('input', ev => {
+  const ta = ev.target.closest('textarea[data-notas]'); if(!ta) return;
+  const id = ta.closest('.card').id.slice(2);
+  clearTimeout(notaT); notaT = setTimeout(() => { E.n[id] = ta.value; salvar(); }, 300);
+});
+
+/* ---------- roteiro ---------- */
+$('saidas').innerHTML = SAIDAS.map(s => `<div class="painel"><h3>${esc(s.t)}</h3><p class="sub">${esc(s.sub)}</p>${
+  s.paradas.map(p => { const l = LOJAS[p.loja]; return `<div class="parada"><span class="h">${esc(p.h)}</span><div>
+    <b>${esc(l.nome)}</b><span class="end" style="display:block;font-size:13.5px;color:var(--ink-2)">${esc(l.end)}</span>
+    <div class="ver">${esc(p.ver)}</div>
+    <div class="acoes">${telBtn(l)}${mapaBtn(l)}<button class="btn" type="button" data-verloja="${p.loja}">Carros desta loja</button></div></div></div>`; }).join('')
+}</div>`).join('');
+$('saidas').addEventListener('click', ev => {
+  const b = ev.target.closest('[data-verloja]'); if(!b) return;
+  E.f.loja = b.dataset.verloja; E.f.teto = 36000; E.f.st = ['prio','vale','sose','evite'];
+  salvar(); montaFiltros(); render(); location.hash = '#carros';
+});
+
+/* ---------- ofertas e janelas ---------- */
+const SELO = {ok:['ok','Valendo'], fim:['fim','Pode ter acabado'], restr:['restr','Com restrição']};
+$('ofertas').innerHTML = OFERTAS.map(o => `<div class="oferta">
+  <div class="t"><b>${esc(o.carro)}</b>${o.por ? `<span><span class="de">${brl(o.de)}</span> <span class="por">${brl(o.por)}</span></span>` : ''}</div>
+  ${o.txt ? `<span class="por" style="font-size:16px">${esc(o.txt)}</span>` : ''}
+  <span class="meta"><span class="selo ${SELO[o.st][0]}">${o.st==='fim' && /Acabou/.test(o.val) ? 'Encerrada' : SELO[o.st][1]}</span>${esc(o.quem)}. ${esc(o.val)}.</span>
+  ${o.obs ? `<span class="meta">${esc(o.obs)}</span>` : ''}
+  ${o.url ? `<a class="meta" href="${o.url}" target="_blank" rel="noopener">Fonte: ${esc(o.fonte)}</a>` : `<span class="meta">Fonte: ${esc(o.fonte)}</span>`}
+</div>`).join('');
+$('janelas').innerHTML = JANELAS.map(j => `<div class="janela"><span class="q">${esc(j.q)}</span><b>${esc(j.t)}</b><p>${esc(j.p)}</p></div>`).join('');
+
+/* ---------- checklist geral ---------- */
+function listaChk(el, itens, pref){
+  $(el).innerHTML = itens.map((t,i) => `<li><label><input type="checkbox" data-g="${pref}${i}" ${E.g[pref+i] ? 'checked' : ''}><span>${esc(t)}</span></label></li>`).join('');
+}
+listaChk('chkCarro', CHK_CARRO, 'c'); listaChk('chkPapel', CHK_PAPEL, 'p'); listaChk('chkNeg', CHK_NEG, 'n');
+$('checklist').addEventListener('change', ev => { const cb = ev.target.closest('input[data-g]'); if(!cb) return; E.g[cb.dataset.g] = cb.checked; salvar(); });
+$('limparChk').onclick = () => { E.g = {}; salvar(); document.querySelectorAll('#checklist input[data-g]').forEach(x => x.checked = false); toast('Checklist desmarcado'); };
+$('copiar').onclick = async () => {
+  const t = $('msg').textContent;
+  try{ await navigator.clipboard.writeText(t); toast('Mensagem copiada'); }
+  catch(e){ const r = document.createRange(); r.selectNodeContents($('msg')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast('Selecionei o texto. Copie pelo menu'); }
+};
+
+/* ---------- fontes ---------- */
+$('fontes').innerHTML = FONTES.map(([t,u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join('');
+
+montaFiltros(); render(); mostrarAba();
+</script>
+</body>
+</html>
